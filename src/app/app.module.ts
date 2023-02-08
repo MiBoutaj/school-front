@@ -5,8 +5,11 @@ import { KeycloakAngularModule, KeycloakService } from 'keycloak-angular';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { StudentComponent } from './component/student/student.component';
+import { ProfesseurComponent } from './component/professeur/professeur.component';
+import { AbsenceComponent } from './component/absence/absence.component';
 
-export function initializeKeycloak(
+  /* export function initializeKeycloak(
   keycloak: KeycloakService
   ) {
     return () =>
@@ -27,11 +30,15 @@ export function initializeKeycloak(
         }
       });
 }
+*/
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    StudentComponent,
+    ProfesseurComponent,
+    AbsenceComponent,
   ],
   imports: [
     BrowserModule,
@@ -40,12 +47,13 @@ export function initializeKeycloak(
     KeycloakAngularModule,
   ],
   providers: [
-    {
+     /*{
       provide: APP_INITIALIZER,
       useFactory: initializeKeycloak,
       multi: true,
       deps: [KeycloakService],
     }
+    */
   ],
   bootstrap: [AppComponent]
 })
