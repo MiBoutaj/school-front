@@ -1,1 +1,26 @@
-<p>professeur works!</p>
+
+<div style="margin: auto; width: 70%;margin-top: 50px">
+  <table class="table">
+    <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">CIN</th>
+      <th scope="col">Metier</th>
+      <th scope="col">Statuts</th>
+      <th scope="col">Date de naissance</th>
+      <th scope="col">email</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let p of professor | async">
+      <td>{{p.name}}</td>
+      <td>{{p.cin}}</td>
+      <td>{{p.metier}}</td>
+      <td>{{p.status}}</td>
+      <td>{{p.dateN}}</td>
+      <td>{{p.email}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+

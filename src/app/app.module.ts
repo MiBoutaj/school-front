@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { StudentComponent } from './component/student/student.component';
 import { ProfesseurComponent } from './component/professeur/professeur.component';
 import { AbsenceComponent } from './component/absence/absence.component';
+import { NavbarComponent } from './component/navbar/navbar.component';
 
   /* export function initializeKeycloak(
   keycloak: KeycloakService
@@ -39,6 +40,7 @@ import { AbsenceComponent } from './component/absence/absence.component';
     StudentComponent,
     ProfesseurComponent,
     AbsenceComponent,
+    NavbarComponent,
   ],
   imports: [
     BrowserModule,
