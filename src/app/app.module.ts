@@ -10,7 +10,7 @@ import { ProfesseurComponent } from './component/professeur/professeur.component
 import { AbsenceComponent } from './component/absence/absence.component';
 import { NavbarComponent } from './component/navbar/navbar.component';
 
-  /* export function initializeKeycloak(
+   export function initializeKeycloak(
   keycloak: KeycloakService
   ) {
     return () =>
@@ -31,7 +31,7 @@ import { NavbarComponent } from './component/navbar/navbar.component';
         }
       });
 }
-*/
+
 
 
 @NgModule({
