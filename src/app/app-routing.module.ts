@@ -7,7 +7,7 @@ import {ProfesseurComponent} from "./component/professeur/professeur.component";
 
 const routes: Routes = [
   { path: '', component: AppComponent , canActivate: [AuthGuard]},
-  //{ path: '**', redirectTo: '' },
+  { path: '**', redirectTo: '' },
   { path:'student', component: StudentComponent},
   { path:'professor', component: ProfesseurComponent}
 ];

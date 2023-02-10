@@ -23,10 +23,10 @@ import { NavbarComponent } from './component/navbar/navbar.component';
         initOptions: {
 
           onLoad :"login-required",
-          //pkceMethod: 'S256', 
+          //pkceMethod: 'S256',
           // must match to the configured value in keycloak
-          //redirectUri: 'http://localhost:4200/**',   
-          // this will solved the error 
+          //redirectUri: 'http://localhost:4200/**',
+          // this will solved the error
           checkLoginIframe: false
         }
       });
@@ -49,13 +49,13 @@ import { NavbarComponent } from './component/navbar/navbar.component';
     KeycloakAngularModule,
   ],
   providers: [
-     /*{
+     {
       provide: APP_INITIALIZER,
       useFactory: initializeKeycloak,
       multi: true,
       deps: [KeycloakService],
     }
-    */
+
   ],
   bootstrap: [AppComponent]
 })
